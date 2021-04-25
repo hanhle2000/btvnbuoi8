@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>btvnbuoi8</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<script src="index.js">
+</script>
+
+<body>
+    <h4>Bài 0 : Viết chương trình kiểm tra n có phải là số nguyên tố hay không?</h4>
+    <script type="text/javascript">
+        function hienthibai0() {
+            let number = document.getElementById("numberb").value;
+            let check=true;
+            if(numberb<2)
+            {
+                check=false;
+            }
+            else if(numberb==2)
+            {
+                check=true;
+            }
+            else
+            {
+                for(let index=2;index<number-1;index++){
+                if(number%index==0)
+                {
+                     check=false;
+                }
+            }
+        }
+        if(check===true)
+        {
+            alert('la so nt');
+        }
+        else
+        {
+            alert('không');
+        }
+    }
+    </script>
+    <form>
+        Nhập n:<input type="text" id="numberb" name="number" />
+      <br> <input type="button" value="hienthi" onclick="hienthibai0()" />
+    </form>
+
+    <!-- ...................... -->
+    <h4>Bài 1 : Viết chương trình in ra các số từ 1 đến n?</h4>
+<script type="text/javascript">
+        function hienthibai1() {
+            let number1 = document.getElementById("number1").value;
+            for(let i=0;i<=number1;i++ )
+            {
+                if(i>0)
+                alert(i);
+            }
+        }
+    </script>
+    <form>
+      Nhập n:<input type="text" id="number1" name="number" />
+      <br> <input type="button" value="hienthi" onclick="hienthibai1()" />
+    </form>
+    <!-- ........................ -->
+
+    <h4>Bài 2: Viết chương trình in ra các số lẻ từ 1 đến n?</h4>
+    <!-- <div>
+         <tr>Nhập số : <input id="number" type="text" name="number"></tr>
+        <input type="button" onclick="hienthi()" value="hienthi"></input>
+    </div> 
+     <div class="kq"></div> -->
+    <script type="text/javascript">
+        function hienthibai2() {
+            let number = document.getElementById("number").value;
+            for(let i=0;i<=number;i++ )
+        {
+            if(i%2==1)
+             alert(i);
+        
+        } 
+        }
+    </script>
+    <form>
+        Nhập n:<input type="text" id="number" name="number" />
+      <br> <input type="button" value="hienthi" onclick="hienthibai2()" />
+    </form>
+<!-- ........................ -->
+
+    <h4>Bài 3 :  Viết chương trình in ra các số chẳn từ 1 đến n?</h4>
+    <script type="text/javascript">
+        function hienthibai3() {
+            let number3 = document.getElementById("number3").value;
+            for(let i=0;i<=number3;i++ )
+        {
+            if(i%2==0)
+           alert(i);
+        
+        } 
+        }
+    </script>
+    <form>
+        Nhập n:<input type="text" id="number3" name="number" />
+      <br> <input type="button" value="hienthi" onclick="hienthibai3()" />
+    </form>
+
+
+    <!-- ................................... -->
+    <h4>Bài 5 :Viết chương trình tính tổng từ 1 đến n?</h4>
+    <script type="text/javascript">
+        function hienthibai5() {
+            let numberb5 = document.getElementById("numberb5").value;
+            let s=0;
+            for(let i=1;i<=numberb5;i++ )
+        {
+          s=s+i;
+          
+        }  alert(s);
+        }
+    </script>
+    <form>
+        Nhập n:<input type="text" id="numberb5" name="number" />
+      <br> <input type="button" value="hienthi" onclick="hienthibai5()" />
+    </form>
+    <!-- ............. -->
+
+    <h4>Bài 6 :Viết chương trình tính tổng bình phương của các số từ 1 đến n?</h4>
+    <script type="text/javascript">
+        function hienthibai6() {
+            let numberb6 = document.getElementById("numberb6").value;
+            let s=0;
+            for(let i=1;i<=numberb6;i++ )
+        {
+          s=s+i;
+          
+        }  alert(s*s);
+        }
+    </script>
+    <form>
+        Nhập n:<input type="text" id="numberb6" name="number" />
+      <br> <input type="button" value="hienthi" onclick="hienthibai6()" />
+    </form>
+
+    <!-- ............... -->
+
+    <h4>Bài 7:  Tính tổng các số lẻ trong khoảng 1 đến n?</h4>
+    <script type="text/javascript">
+        function hienthibai7() {
+            let numberb7 = document.getElementById("numberb7").value;
+            let s=0;
+            for(let i=1;i<=numberb7;i++ )
+        {
+            if(i%2==1)
+          s=s+i;
+          
+        }  alert(s);
+        }
+    </script>
+    <form>
+        Nhập n:<input type="text" id="numberb7" name="number" />
+      <br> <input type="button" value="hienthi" onclick="hienthibai7()" />
+    </form>
+
+    <!-- ................ -->
+    <h4>Bai8:  Kiểm tra số n có toàn số lẻ tạo thành hay không?</h4>
+    <script type="text/javascript">
+        function hienthibai8() {
+            let numberb8 = document.getElementById("numberb7").value;
+            let check=true;
+            while(numberb8 /=10)
+            {
+                if((numberb8%10)%2==0)
+                {
+                    check=false;
+                }
+            }
+            if(check==true)
+            {
+                alert('đúng');
+            }
+            else{
+                alert('sai');
+            }
+        }
+    </script>
+    <form>
+        Nhập n:<input type="text" id="numberb8" name="number" />
+      <br> <input type="button" value="hienthi" onclick="hienthibai8()" />
+    </form>
+</body>
+
+</html>
